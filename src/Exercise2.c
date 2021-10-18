@@ -57,9 +57,6 @@ int sort;
 	}
 
 
-}
-
-
 int main(int argc, char *argv[]) {
 	//testing variable, applying it to your algorithm for auto-evaluating
 	argc--;
