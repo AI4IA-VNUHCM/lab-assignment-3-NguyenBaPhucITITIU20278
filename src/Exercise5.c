@@ -24,7 +24,7 @@ for(int i = 0; i < n; i++){
 		}
 	}
 
-}
+
 	for(int i = 0; i < j; i++) {
 	printf("%d ", po[i]);}
 }	
