@@ -14,8 +14,51 @@ Ex:
 
 void Ex2(int arr[], int n){
 	//Your codes here
+int sort;
+	for (int i = 0; i <=n; i++)
+	{
+	 if (arr[i]%2==0)
+		{
+		for (int j = i+1; j <=n-1; j++)
+			{
+			if(arr[j]%2==0)
+				{
+				if(arr[j]>=arr[i])
+					{	
+						sort=arr[j];
+						arr[j]=arr[i];
+						arr[i]=sort;
+					}
+				}
+			}
+
+		}
+
+	}
+	for (int i = 0; i <=n; i++)
+	{
+		if (arr[i]%2==1)
+		{
+			for (int j = i+1; j <=n-1; j++)
+			{
+				if(arr[j]%2==1)
+				{
+					if(arr[j]<=arr[i])
+					{	
+						sort=arr[j];
+						arr[j]=arr[i];
+						arr[i]=sort;
+					}
+				}
+			}
+
+		}
+
+	}
+
 	
-}
+}	
+
 
 int main(int argc, char *argv[]) {
 	//testing variable, applying it to your algorithm for auto-evaluating
