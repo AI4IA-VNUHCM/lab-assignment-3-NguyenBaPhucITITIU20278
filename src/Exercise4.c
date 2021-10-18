@@ -14,6 +14,24 @@ ______________________________________
 
 int Ex4(int arr[], int n){
 	//Your codes here
+int a,b,c;
+c=1;
+for(a=0,b=1;a<n-1 && b<n;a++,b++){
+
+	if(arr[a]<arr[b]){
+		c*=-1;
+	}
+	if(arr[a]>arr[b]){
+		 c*=2;
+	}
+
+}
+	if (c==-1 || c==1)
+	return 1;
+	if (c>2)
+	return -1;
+	if (c<-1)
+	return 0;
 	
 }
 
