@@ -13,9 +13,21 @@ ______________________________________
 
 void Ex5(int arr[], int n){
 	//Your codes here
-	
-}
+	int j = 0, po[n];
+for(int i = 0; i < n; i++){
+	if(arr[i] > 0) {
+		printf("%d ", arr[i]);
+	}
+	else{
+		po[j] = arr[i];
+		j++;
+		}
+	}
 
+}
+	for(int i = 0; i < j; i++) {
+	printf("%d ", po[i]);}
+}	
 int main(int argc, char *argv[]) {
 	//testing variable, applying it to your algorithm for auto-evaluating
 	argc--;
